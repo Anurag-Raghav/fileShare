@@ -1,5 +1,6 @@
 const express= require('express');
 const app = express();
+const path = require('path')
 require('dotenv').config();
 require('./db/conn');
 const port=process.env.PORT || 8000;
@@ -7,6 +8,10 @@ const port=process.env.PORT || 8000;
 app.use(express.urlencoded({extended:true}));
 
 app.set('view engine', 'hbs')
+
+// set public
+app.use(express.static(path.join(__dirname,"public")))
+
 
 // routes
 app.use('/api/files', require('./routes/files'));
