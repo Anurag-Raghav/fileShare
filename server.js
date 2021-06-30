@@ -1,6 +1,7 @@
 const express= require('express');
 const app = express();
 const path = require('path')
+const cors = require('cors');
 require('dotenv').config();
 require('./db/conn');
 const port=process.env.PORT || 8000;
@@ -8,6 +9,10 @@ const port=process.env.PORT || 8000;
 app.use(express.urlencoded({extended:true}));
 
 app.set('view engine', 'hbs')
+
+
+// set cors
+app.use(cors())
 
 // set public
 app.use(express.static(path.join(__dirname,"public")))

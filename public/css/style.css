@@ -1,3 +1,75 @@
-body{
-    background-color: aqua;
+body,html{
+  background: rgb(162, 236, 224);
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body, .drop-zone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upload-container{
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 20px #0000002e;
+}
+.drop-zone{
+  width: 500px;
+  min-height: 200px;
+  border: 2px dashed rgba(26, 119, 240, 0.774);
+  margin: 30px;
+  border-radius: 10px;
+  transition: all .2s ease;
+}
+
+.dragged.drop-zone{
+    background: cyan;
+    border-color: darkblue;
+}
+.icon-container{
+    width: 75px;
+    height: 100px;
+    position: relative;
+    
+}
+ 
+#fileInput{
+  display: none;
+}
+.browseBtn{
+  color: #036df8;
+  cursor: pointer;
+}
+
+.sharing-container{
+width: 500px;
+display: none;
+margin: 30px;
+}
+.sharing-container .input-container{
+position: relative;
+}
+.sharing-container .input-container input{
+width: 100%;
+border: 2px dashed blue;
+border-radius: 3px;
+padding: 10px 15px;
+box-sizing: border-box;
+font-size: 20px;
+background: #f5fcff ;
+color:#0000008c ;
+}
+
+.input-container img{
+position: absolute;
+height: 22px;
+width: 30px;
+right: 7px;
+top: 12px;
+background:#f5fcff ;
+cursor: pointer;
 }
