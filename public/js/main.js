@@ -4,7 +4,8 @@ const browseBtn = document.querySelector('.browseBtn')
 const uploadURL = "http://localhost:8000/api/files";
 const fileURLInput = document.querySelector('#fileURL')
 const copyBtn = document.querySelector('#copyBtn')
-const sharingContainer= document.querySelector('.sharing-container')
+const sharingContainer= document.querySelector('.sharing-container');
+const popup = document.querySelector('.popup');
 
 dropZone.addEventListener('dragover',(e)=>{
     e.preventDefault();
@@ -39,6 +40,11 @@ browseBtn.addEventListener('click', ()=>{
 copyBtn.addEventListener('click', ()=>{
     fileURLInput.select();
     document.execCommand('copy');
+    popup.style.display='block';
+    setTimeout(function(){
+        popup.style.display='none';
+    },2000);
+   
 })
 
 const uploadFile =  ()=>{

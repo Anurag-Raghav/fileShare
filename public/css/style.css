@@ -1,5 +1,8 @@
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 body,html{
-  background: rgb(87, 36, 110);
+  background: #9DC88D;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -13,17 +16,19 @@ body, .drop-zone , .download-container{
 }
 
 .upload-container{
-  background: #ffffff;
+  background: #164A41;
   border-radius: 10px;
   box-shadow: 0px 20px 20px #0000002e;
+  position: relative;
 }
 .drop-zone{
   width: 500px;
   min-height: 200px;
-  border: 2px dashed rgba(26, 119, 240, 0.774);
+  border: 2px dashed #164A41;
   margin: 30px;
   border-radius: 10px;
   transition: all .2s ease;
+  background: #9DC88D;
 }
 
 .dragged.drop-zone{
@@ -50,18 +55,29 @@ width: 500px;
 display: none;
 margin: 30px;
 }
+
+.expire{
+  color: white;
+}
+.popup{
+  position: absolute;
+  right: 20px;
+  bottom: 95px;
+  color: white;
+  display: none;
+}
 .sharing-container .input-container{
 position: relative;
 }
 .sharing-container .input-container input{
 width: 100%;
-border: 2px dashed blue;
+border: 2px dashed #164A41;
 border-radius: 3px;
 padding: 10px 15px;
 box-sizing: border-box;
 font-size: 20px;
-background: #f5fcff ;
-color:#0000008c ;
+background: #9DC88D;
+color:white;
 }
 
 .input-container img{
@@ -70,61 +86,71 @@ height: 22px;
 width: 30px;
 right: 7px;
 top: 12px;
-background:#f5fcff ;
+background:#9DC88D ;
 cursor: pointer;
 }
 .download-container{
-  border: 2px solid gold;
+ 
   padding: 10px;
   height: 400px;
-  background: white;
+  background: #164A41;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
  
 }
 
+.download-container div{
+  box-shadow: 10px 10px 5px #4D774E;
+  border: 1px solid #bfbfbf;
+}
+
+
 .uuid{
-  border:2px solid blue;
   padding: 4px;
   border-radius: 3px;
   margin: 4px;
   width: 400px;
- 
   top: 40px;
+  color: #ffffff;
+  background: #9DC88D;
 }
 .uuid span{
   font-size: 25px;
+  color: #000000f3;
 }
 
 .file-name{
-  border:2px solid blue;
   padding: 4px;
   border-radius: 3px;
   width: 400px;
-  
+  background: #9DC88D;
+  color: #ffffff;
   top: 100px;
 }
 .file-name span{
   font-size: 25px;
   margin: 4px;
+  color: #000000f3;
 }
 
 .down{
   width: 400px;
-  border: 2px solid blue;
   padding: 4px;
   border-radius: 3px;
+  background: #9DC88D;
+  color: #ffffff;
 }
 
 .down span{
   font-size: 25px;
+  margin: 4px;
+  color: #000000f3;
 }
-
 
 button{
  top: 350px;
- background-color:lightgreen;
+ background: #4D774E;
  color: white;
  padding: 4px;
  text-decoration: none;
@@ -132,4 +158,11 @@ button{
  cursor: pointer;
  left: 170px;
  border-radius: 4px;
+}
+
+button:hover{
+  color: #fff;
+  background: black;
+  transition: 0.2s ease all;
+  transform: scale(1.15)
 }
