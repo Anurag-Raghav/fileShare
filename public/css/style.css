@@ -5,7 +5,7 @@ body,html{
   margin: 0;
 }
 
-body, .drop-zone{
+body, .drop-zone , .download-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,4 +72,64 @@ right: 7px;
 top: 12px;
 background:#f5fcff ;
 cursor: pointer;
+}
+.download-container{
+  border: 2px solid gold;
+  padding: 10px;
+  height: 400px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.uuid{
+  border:2px solid blue;
+  padding: 4px;
+  border-radius: 3px;
+  margin: 4px;
+  width: 400px;
+ 
+  top: 40px;
+}
+.uuid span{
+  font-size: 25px;
+}
+
+.file-name{
+  border:2px solid blue;
+  padding: 4px;
+  border-radius: 3px;
+  width: 400px;
+  
+  top: 100px;
+}
+.file-name span{
+  font-size: 25px;
+  margin: 4px;
+}
+
+.down{
+  width: 400px;
+  border: 2px solid blue;
+  padding: 4px;
+  border-radius: 3px;
+}
+
+.down span{
+  font-size: 25px;
+}
+
+
+button{
+ top: 350px;
+ background-color:lightgreen;
+ color: white;
+ padding: 4px;
+ text-decoration: none;
+ font-size: 20px;
+ cursor: pointer;
+ left: 170px;
+ border-radius: 4px;
 }

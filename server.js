@@ -8,14 +8,15 @@ const port=process.env.PORT || 8000;
 
 app.use(express.urlencoded({extended:true}));
 
-app.set('view engine', 'hbs')
+app.set('view engine', 'hbs');
+app.set('views', 'views')
 
 
 // set cors
 app.use(cors())
 
 // set public
-app.use(express.static(path.join(__dirname,"public")))
+app.use(express.static(path.join(__dirname ,"public")))
 
 
 // routes

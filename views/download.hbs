@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>download page</title>
 </head>
 <body>
-    <div class="container">
-        <h4>uuid :</h4>{{uuid}} <br>
+    <div class="download-container">
 
-       <h4>filename:</h4> {{filename}} <br>
+            <div class="uuid">
 
-
-        <h4>downloadLink: </h4>{{downloadLink}} <br>
-
+            <span>uuid:</span> {{uuid}} 
+            
+            </div>
+            <div class="file-name">
+           <span>filename:</span> {{filename}} 
+            </div>
+            <div class="down">
+        <span>download-Link:</span> {{downloadLink}} 
+            </div>
        <form method="get" action="{{downloadLink}}">
     <button type="submit">Download</button>
             </form>
