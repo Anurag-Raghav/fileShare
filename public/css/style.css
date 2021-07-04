@@ -41,7 +41,10 @@ body, .drop-zone , .download-container{
     position: relative;
     
 }
- 
+.title{
+  color: white;
+}
+
 #fileInput{
   display: none;
 }
