@@ -106,6 +106,7 @@ cursor: pointer;
 .download-container div{
   box-shadow: 10px 10px 5px #4D774E;
   border: 1px solid #bfbfbf;
+  width: 400px;
 }
 
 
@@ -113,7 +114,6 @@ cursor: pointer;
   padding: 4px;
   border-radius: 3px;
   margin: 4px;
-  width: 400px;
   top: 40px;
   color: #ffffff;
   background: #9DC88D;
@@ -126,7 +126,6 @@ cursor: pointer;
 .file-name{
   padding: 4px;
   border-radius: 3px;
-  width: 400px;
   background: #9DC88D;
   color: #ffffff;
   top: 100px;
@@ -138,7 +137,6 @@ cursor: pointer;
 }
 
 .down{
-  width: 400px;
   padding: 4px;
   border-radius: 3px;
   background: #9DC88D;
@@ -150,6 +148,8 @@ cursor: pointer;
   margin: 4px;
   color: #000000f3;
 }
+
+
 
 button{
  top: 350px;
@@ -168,4 +168,30 @@ button:hover{
   background: black;
   transition: 0.2s ease all;
   transform: scale(1.15)
+}
+
+@media only screen and (max-width: 600px){
+
+  .drop-zone{
+    width: 200px;
+    margin: 10px;
+    min-height: 400px;
+  }
+  .sharing-container{
+    width: 200px;
+    margin: 10px;
+  }
+  .download-container{
+    height: 600px;
+  }
+  .download-container div{
+    width: 300px;
+    height: 100px;
+  }
+  .download-container .down{
+    overflow-wrap: break-word;
+  }
+  
+
+
 }
