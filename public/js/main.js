@@ -1,5 +1,6 @@
 const dropZone =  document.querySelector('.drop-zone');
 const fileInput = document.querySelector('#fileInput')
+const icon = document.querySelector('.icon')
 const browseBtn = document.querySelector('.browseBtn')
 const uploadURL = "http://localhost:8000/api/files";
 const fileURLInput = document.querySelector('#fileURL')
@@ -34,6 +35,9 @@ fileInput.addEventListener('change', ()=>{
 })
 
 browseBtn.addEventListener('click', ()=>{
+    fileInput.click();
+})
+icon.addEventListener('click', ()=>{
     fileInput.click();
 })
 

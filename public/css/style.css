@@ -1,7 +1,86 @@
-*{
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+body {
+  margin: 0px;
+  overflow: hidden;
+
 }
-body,html{
+
+
+:root {
+  --cust-primary-color: #2B3960;
+}
+.background-gradient {
+  
+  background-color: var(--cust-primary-color);
+}
+
+.box1 {
+  border: 1px solid white;
+    border-radius: 34px;
+    padding: 35px;
+    height: 55vh;
+    width: 100%;
+ background-color:white;
+ cursor: pointer;
+}
+.iconfile i{
+font-size: 40px;
+padding: 10px;
+cursor: pointer;
+}
+
+.copy-file input {
+  font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    border: 1px solid var(--cust-primary-color);
+    border-radius: 12px;
+    width: 80%;
+    padding-left: 50px;
+    height: 47px;
+    overflow: hidden;
+}
+.copy-file input:focus{
+  outline: none;
+  box-shadow: none;
+}
+.copy-file img {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  
+}
+.title p {
+font-size: 22px;
+font-weight: 600! important;
+}
+.title a {
+ color:var(--cust-primary-color);
+ text-decoration: none;
+ cursor: pointer;
+}
+.title a:hover {
+  text-decoration: none;
+  color: var(--cust-primary-color);
+}
+.sharing-container p {
+  font-size: 20px;
+  font-weight: 600!important;
+}
+.popup{
+  position: absolute;
+  right: 30px;
+  bottom: 95px;
+  color: white;
+  display: none;
+}
+.sharing-container{
+position: relative;
+}
+#fileInput{
+  display: none;
+}
+
+/* body,html{
   background: #9DC88D;
   height: 100%;
   padding: 0;
@@ -168,4 +247,4 @@ button:hover{
   background: black;
   transition: 0.2s ease all;
   transform: scale(1.15)
-}
+} */
