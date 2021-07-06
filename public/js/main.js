@@ -1,7 +1,7 @@
 const dropZone =  document.querySelector('.drop-zone');
 const fileInput = document.querySelector('#fileInput')
 const browseBtn = document.querySelector('.browseBtn')
-const uploadURL = "http://localhost:8000/api/files";
+const uploadURL = "https://filehshare01.games/api/files";
 const fileURLInput = document.querySelector('#fileURL')
 const copyBtn = document.querySelector('#copyBtn')
 const sharingContainer= document.querySelector('.sharing-container');

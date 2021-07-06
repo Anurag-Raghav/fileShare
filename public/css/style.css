@@ -173,16 +173,16 @@ button:hover{
 @media only screen and (max-width: 600px){
 
   .drop-zone{
-    width: 200px;
+    width: 300px;
     margin: 10px;
-    min-height: 400px;
+    height: 500px;
   }
   .sharing-container{
-    width: 200px;
+    width: 300px;
     margin: 10px;
   }
   .download-container{
-    height: 600px;
+    height: 550px;
   }
   .download-container div{
     width: 300px;
@@ -191,7 +191,9 @@ button:hover{
   .download-container .down{
     overflow-wrap: break-word;
   }
-  
+  .popup{
+    bottom: 75px;
+  }
 
 
 }
