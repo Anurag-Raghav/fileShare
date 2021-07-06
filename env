@@ -1,0 +1,2 @@
+Mongodb_URI = mongodb://localhost:27017/links
+APP_BASE_URL = http://localhost:8000

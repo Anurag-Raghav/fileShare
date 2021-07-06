@@ -1,92 +1,7 @@
-* {
-  font-family: 'Cardo', serif;
+*{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-body {
-  margin: 0px;
-  overflow: hidden;
-
-}
-
-
-:root {
-  --cust-primary-color: #2B3960;
-}
-.background-gradient {
-  
-  background-color: var(--cust-primary-color);
-}
-
-.box1 {
-  border:none;
-    border-radius: 34px;
-    padding: 35px;
-    height: 55vh;
-    width: 100%;
-    -webkit-box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
-     -moz-box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
-      box-shadow: -1px 6px 13px 0px rgba(0,0,0,0.44);
-    /* box-shadow: 0px 0px 25px -6px rgba(0, 0, 0, 0.2); */
- background-color:white;
- cursor: pointer;
-}
-.iconfile i{
-font-size: 40px;
-padding: 10px;
-cursor: pointer;
-}
-
-.copy-file input {
-  font-size: 18px;
-    font-weight: 600;
-    background-color: white;
-    border: 1px solid var(--cust-primary-color);
-    border-radius: 12px;
-    width: 80%;
-    padding-left: 50px;
-    height: 47px;
-    overflow: hidden;
-}
-.copy-file input:focus{
-  outline: none;
-  box-shadow: none;
-}
-.copy-file img {
-  padding-left: 10px;
-  margin-bottom: 10px;
-  
-}
-.title p {
-font-size: 22px;
-font-weight: 600! important;
-}
-.title a {
- color:var(--cust-primary-color);
- text-decoration: none;
- cursor: pointer;
-}
-.title a:hover {
-  text-decoration: none;
-  color: var(--cust-primary-color);
-}
-.sharing-container p {
-  font-size: 20px;
-  font-weight: 600!important;
-}
-.popup{
-  position: absolute;
-  right: 30px;
-  bottom: 95px;
-  color: white;
-  display: none;
-}
-.sharing-container{
-position: relative;
-}
-#fileInput{
-  display: none;
-}
-
-/* body,html{
+body,html{
   background: #9DC88D;
   height: 100%;
   padding: 0;
@@ -253,4 +168,4 @@ button:hover{
   background: black;
   transition: 0.2s ease all;
   transform: scale(1.15)
-} */
+}
